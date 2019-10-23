@@ -1,5 +1,10 @@
-const {Storage} = require('@google-cloud/storage');
+const { Storage } = require('@google-cloud/storage');
 const storage = new Storage();
+const bucket = storage.bucket('mep-details');
+
+const fs = require('fs');
+const fsPromises = require("fs").promises;
+
 const cheerio = require('cheerio')
 const axios = require("axios");
 
@@ -21,11 +26,43 @@ const getMeps = async () => {
             meps[i] = { name: name, party: party };
         });
 
-        console.log(meps);
+        const jsonData = JSON.stringify(meps, null, 2)
+        /*
+                fs.writeFile('meps.json', jsonData, (err) => {
+                    if (err) throw err;
+                    console.log('Data written to file');
+                });
+        */
 
+        // download the previously collected data from Storage
+        const mepsLocation = bucket.file('meps.json');
+        const oldMepsFile = await downloadFile(mepsLocation);
+
+        fs.writeFile('meps_old.json', oldMepsFile, (err) => {
+            if (err) throw err;
+            console.log('Data written to file');
+        });
+
+        // read into json
+        const mepsOld = await fsPromises.readFile('meps_old.json', 'utf8');
+        const mepsOldJson = JSON.parse(mepsOld);
+
+
+        console.log(mepsOldJson[0]);
+        /*
+                bucket.upload('meps.json').then(function(data) {
+                    const file = data[0];
+                    //console.log(file);
+                });
+        */
         // TODO: store meps somewhere, BigQuery?
         // how to map the meps who misspelled their name in twitter to
     }
 }
 // https://levelup.gitconnected.com/web-scraping-with-node-js-c93dcf76fe2b
 getMeps();
+
+
+const downloadFile = async (file) => {
+    return file.download();
+}
