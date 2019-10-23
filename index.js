@@ -1,3 +1,5 @@
+const {Storage} = require('@google-cloud/storage');
+const storage = new Storage();
 const cheerio = require('cheerio')
 const axios = require("axios");
 

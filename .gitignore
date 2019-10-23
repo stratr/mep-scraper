@@ -32,8 +32,8 @@ typings/
 .env
 .env.yaml
 
-# BigQuery account details
-bigquery_service_acc.json
+# Storage account details
+cloud_storage_service_acc.json
 
 # next.js build output
 .next
