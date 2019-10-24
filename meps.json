@@ -1,0 +1,802 @@
+[
+  {
+    "name": "Anders Adlercreutz",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Pekka Aittakumpu",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Outi Alanko-Kahiluoto",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Li Andersson",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Sanna Antikainen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Paavo Arhinmäki",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Marko Asell",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Heikki Autto",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Kim Berg",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Sandra Bergqvist",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Eva Biaudet",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Thomas Blomqvist",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Juho Eerola",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Markku Eestilä",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Tiina Elo",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Ritva Elomaa",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Eeva-Johanna Eloranta",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Seppo Eskelinen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Sari Essayah",
+    "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Tarja Filatov",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Bella Forsgrén",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Sanni Grahn-Laasonen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jukka Gustafsson",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Maria Guzenina",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Tuula Haatainen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Pekka Haavisto",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Jussi Halla-aho",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Timo Harakka",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Atte Harjanne",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Harry Harkimo",
+    "party": "Liike Nyt -eduskuntaryhmä"
+  },
+  {
+    "name": "Satu Hassi",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Hannakaisa Heikkinen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Janne Heikkinen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Timo Heinonen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Eveliina Heinäluoma",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Anna-Maja Henriksson",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Hanna Holopainen",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Mari Holopainen",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Veronika Honkasalo",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Petri Honkonen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Inka Hopsu",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Hannu Hoskonen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Petri Huru",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Hanna Huttunen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Saara Hyrkkö",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Häkkänen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Katja Hänninen",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Anna-Kaisa Ikonen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Olli Immonen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Kalle Jokinen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Vilhelm Junnila",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Kaisa Juuso",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Arja Juvonen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Heli Järvinen",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Kaikkonen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Eeva Kalli",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Anne Kalmari",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Ilkka Kanerva",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Toimi Kankaanniemi",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Emma Kari",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Mika Kari",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Pia Kauma",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Ville Kaunisto",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Juho Kautto",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Hilkka Kemppi",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Pihla Keto-Huovinen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Anneli Kiljunen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Kimmo Kiljunen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Marko Kilpi",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Mikko Kinnunen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Krista Kiuru",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Pauli Kiuru",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Mai Kivelä",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Esko Kiviranta",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Pasi Kivisaari",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Anna Kontula",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Ari Koponen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Noora Koponen",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Jukka Kopra",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jari Koskela",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Johannes Koskinen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Hanna Kosonen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Jouni Kotiaho",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Terhi Koulumies",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Katri Kulmuni",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Kurvinen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Johan Kvarnström",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Merja Kyllönen",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Suna Kymäläinen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Mikko Kärnä",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Joonas Könttä",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Sheikki Laakso",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Mia Laiho",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Antero Laukkanen",
+    "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Rami Lehto",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Elina Lepomäki",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jari Leppä",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Aki Lindén",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Lindtman",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Mika Lintilä",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Markus Lohi",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Pia Lohikoski",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Mikko Lundén",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Mats Löfström",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Niina Malm",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Sanna Marin",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Matias Marttinen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Hanna-Leena Mattila",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Leena Meri",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Krista Mikkonen",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Sari Multala",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Markus Mustajärvi",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Kai Mykkänen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jari Myllykoski",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Juha Mäenpää",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Jani Mäkelä",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Riitta Mäkinen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Merja Mäkisalo-Ropponen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Jukka Mäkynen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Veijo Niemi",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Mika Niikko",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Anders Norrback",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Ilmari Nurminen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Maria Ohisalo",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Johanna Ojala-Niemelä",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Mikko Ollikainen",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Petteri Orpo",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jouni Ovaska",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Sirpa Paatero",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Tom Packalén",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Aino-Kaisa Pekonen",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Jaana Pelkonen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Mauri Peltokangas",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Pirkka-Pekka Petelius",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Raimo Piirainen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Arto Pirttilahti",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Jenni Pitko",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Sakari Puisto",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Riikka Purra",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Juha Pylväs",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Lulu Ranne",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Rantakangas",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Mari Rantanen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Piritta Rantanen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Veronica Rehn-Kivi",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Minna Reijonen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Antti Rinne",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Paula Risikko",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jari Ronkainen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Wille Rydman",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Päivi Räsänen",
+    "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Annika Saarikko",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Kristiina Salonen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Janne Sankelo",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jussi Saramo",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Hanna Sarkkinen",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Sari Sarkomaa",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Arto Satonen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Sami Savio",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Mikko Savola",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Matti Semi",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Jenna Simula",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Juha Sipilä",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Saara-Sofia Sirén",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Ruut Sjöblom",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Ville Skinnari",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Riikka Slunga-Poutsalo",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Mirka Soinikoski",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Joakim Strand",
+    "party": "Ruotsalainen eduskuntaryhmä"
+  },
+  {
+    "name": "Iiris Suomela",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Hussein al-Taee",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Katja Taimela",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Mari-Leena Talvitie",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Sari Tanus",
+    "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Ville Tavio",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Kari Tolvanen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Ari Torniainen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Erkki Tuomioja",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Tytti Tuppurainen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Ano Turtiainen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Sebastian Tynkkynen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Jutta Urpilainen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Veikko Vallin",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Sinuhe Wallinheimo",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Matti Vanhanen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Juhana Vartiainen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Anu Vehviläinen",
+    "party": "Keskustan eduskuntaryhmä"
+  },
+  {
+    "name": "Paula Werning",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Heikki Vestman",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Jussi Wihonen",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Pia Viitanen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Sofia Vikman",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Heidi Viljanen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Anne-Mari Virolainen",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Sofia Virta",
+    "party": "Vihreä eduskuntaryhmä"
+  },
+  {
+    "name": "Ville Vähämäki",
+    "party": "Perussuomalaisten eduskuntaryhmä"
+  },
+  {
+    "name": "Tuula Väätäinen",
+    "party": "Sosialidemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Johannes Yrttiaho",
+    "party": "Vasemmistoliiton eduskuntaryhmä"
+  },
+  {
+    "name": "Ben Zyskowicz",
+    "party": "Kansallisen kokoomuksen eduskuntaryhmä"
+  },
+  {
+    "name": "Peter Östman",
+    "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  }
+]

@@ -19,44 +19,51 @@ const getMeps = async () => {
     const $ = await fetchData();
     const linkItems = $('#maincontent #WebPartWPQ2 div.link-item');
     if (linkItems && linkItems.length > 190) {
-        const meps = [];
+
+        // scrape mep information from the site
+        const mepsFetched = [];
         linkItems.each((i, elem) => {
             const name = $(elem).find('a').text();
             const party = $(elem).find('div.description').text();
-            meps[i] = { name: name, party: party };
+            mepsFetched[i] = { name: name, party: party };
         });
 
-        const jsonData = JSON.stringify(meps, null, 2)
-        /*
-                fs.writeFile('meps.json', jsonData, (err) => {
-                    if (err) throw err;
-                    console.log('Data written to file');
-                });
-        */
-
         // download the previously collected data from Storage
+        
         const mepsLocation = bucket.file('meps.json');
         const oldMepsFile = await downloadFile(mepsLocation);
 
         fs.writeFile('meps_old.json', oldMepsFile, (err) => {
             if (err) throw err;
-            console.log('Data written to file');
+            console.log('meps_old.json file created');
         });
 
         // read into json
         const mepsOld = await fsPromises.readFile('meps_old.json', 'utf8');
         const mepsOldJson = JSON.parse(mepsOld);
 
+        // compare the scraped data to the data already in storage
+        const newMeps = mepsFetched.filter(mep => {
+            return mepsOld.includes(mep);
+        });
 
-        console.log(mepsOldJson[0]);
-        /*
-                bucket.upload('meps.json').then(function(data) {
-                    const file = data[0];
-                    //console.log(file);
-                });
-        */
-        // TODO: store meps somewhere, BigQuery?
-        // how to map the meps who misspelled their name in twitter to
+        console.log(newMeps.length + ' new meps found.');
+
+        // add new meps to the json
+        const updatedMeps = mepsOldJson.concat(newMeps);
+
+        // write to json file
+        fs.writeFile('meps.json', JSON.stringify(updatedMeps, null, 2), (err) => {
+            if (err) throw err;
+            console.log('meps.json file created');
+        });
+
+        // upload to storage
+        bucket.upload('meps.json').then(function() {
+            console.log('data uploaded to storage');
+            //console.log(file);
+        });
+
     }
 }
 // https://levelup.gitconnected.com/web-scraping-with-node-js-c93dcf76fe2b
