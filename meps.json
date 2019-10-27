@@ -1,9 +1,5 @@
 [
   {
-    "name": "Anders Adlercreutz",
-    "party": "Ruotsalainen eduskuntaryhmä"
-  },
-  {
     "name": "Pekka Aittakumpu",
     "party": "Keskustan eduskuntaryhmä"
   },
@@ -798,5 +794,9 @@
   {
     "name": "Peter Östman",
     "party": "Kristillisdemokraattinen eduskuntaryhmä"
+  },
+  {
+    "name": "Anders Adlercreutz",
+    "party": "Ruotsalainen eduskuntaryhmä"
   }
 ]

@@ -29,9 +29,7 @@ const getMeps = async () => {
         });
 
         // download the previously collected data from Storage
-        
-        const mepsLocation = bucket.file('meps.json');
-        const oldMepsFile = await downloadFile(mepsLocation);
+        const oldMepsFile = await downloadFile(bucket.file('meps.json'));
 
         fs.writeFile('meps_old.json', oldMepsFile, (err) => {
             if (err) throw err;
@@ -44,10 +42,12 @@ const getMeps = async () => {
 
         // compare the scraped data to the data already in storage
         const newMeps = mepsFetched.filter(mep => {
-            return mepsOld.includes(mep);
+            return !includesMep(mep, mepsOldJson);
+            //return mepsOld.includes(mep);
         });
 
         console.log(newMeps.length + ' new meps found.');
+        if (newMeps.length > 0) {console.log(newMeps)};
 
         // add new meps to the json
         const updatedMeps = mepsOldJson.concat(newMeps);
@@ -72,4 +72,16 @@ getMeps();
 
 const downloadFile = async (file) => {
     return file.download();
+}
+
+const includesMep = (mep, mepArray) => {
+    const byName = mepArray.filter((elem) => {
+        return elem.name === mep.name;
+    });
+
+    const byParty = byName.filter((elem) => {
+        return elem.party === mep.party;
+    });
+
+    return byParty.length > 0;
 }
