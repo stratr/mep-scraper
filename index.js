@@ -47,28 +47,33 @@ const getMeps = async () => {
         });
 
         console.log(newMeps.length + ' new meps found.');
-        if (newMeps.length > 0) {console.log(newMeps)};
+        if (newMeps.length > 0) { console.log(newMeps) };
 
         // add new meps to the json
         const updatedMeps = mepsOldJson.concat(newMeps);
 
-        // write to json file
-        fs.writeFile('meps.json', JSON.stringify(updatedMeps, null, 2), (err) => {
-            if (err) throw err;
-            console.log('meps.json file created');
-        });
+        if (updatedMeps.length >= 200) {
+            if (newMeps.length) {
+                // write to json file
+                fs.writeFile('meps.json', JSON.stringify(updatedMeps, null, 2), (err) => {
+                    if (err) throw err;
+                    console.log('meps.json file created');
+                });
 
-        // upload to storage
-        bucket.upload('meps.json').then(function() {
-            console.log('data uploaded to storage');
-            //console.log(file);
-        });
+                // upload to storage
+                bucket.upload('meps.json').then(function() {
+                    console.log('data uploaded to storage');
+                    //console.log(file);
+                });
+            } else {
+                console.log('No new meps found. Aborting upload.');
+            }
 
+        } else {
+            console.log('Something wrong with the meps json. Aborting upload.');
+        }
     }
 }
-// https://levelup.gitconnected.com/web-scraping-with-node-js-c93dcf76fe2b
-getMeps();
-
 
 const downloadFile = async (file) => {
     return file.download();
@@ -85,3 +90,5 @@ const includesMep = (mep, mepArray) => {
 
     return byParty.length > 0;
 }
+
+getMeps();
