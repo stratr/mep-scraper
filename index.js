@@ -50,7 +50,7 @@ const getMeps = async () => {
 
         // read into json
         const mepsOld = await fsPromises.readFile('meps_old.json', 'utf8');
-        const mepsOldJson = JSON.parse(mepsOld);
+        const mepsOldJson = readNdJson(mepsOld);
 
         // compare the scraped data to the data already in storage
         const newMeps = mepsFetched.filter(mep => {
@@ -63,10 +63,6 @@ const getMeps = async () => {
 
         // add new meps to the json
         const updatedMeps = mepsOldJson.concat(newMeps);
-
-        /*
-        TODO here: fetch twitter usernames from the twitter list and add to the json
-        */
 
         // Get all the Twitter user names to fetch
         const listMembers = await fetchMembers({ list_id: keListId, count: 300 });
@@ -100,7 +96,7 @@ const getMeps = async () => {
         if (updatedMeps.length >= 200) {
             if (newMeps.length > 0 || snFound) {
                 // write to json file
-                fs.writeFile('meps.json', JSON.stringify(updatedMeps, null, 2), (err) => {
+                fs.writeFile('meps.json', writeNdJson(updatedMeps), (err) => {
                     if (err) throw err;
                     console.log('meps.json file created');
                 });
@@ -138,6 +134,14 @@ const includesMep = (mep, mepArray) => {
 
 const fetchMembers = async (params) => {
     return client.get('lists/members', params);
+}
+
+const writeNdJson = (arr) => {
+    return arr.map(JSON.stringify).join('\n');
+}
+
+const readNdJson = (str) => {
+    return str.length > 0 ? str.split('\n').map(JSON.parse) : [];
 }
 
 getMeps();
