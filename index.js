@@ -71,15 +71,34 @@ const getMeps = async () => {
         // Get all the Twitter user names to fetch
         const listMembers = await fetchMembers({ list_id: keListId, count: 300 });
         const memberScreenNames = listMembers.users.map(member => { return { screen_name: member.screen_name, name: member.name } });
-        console.log(memberScreenNames[0]);pokpok
 
-                /*
-        TODO here: add the screen names to the meps json
-        */
+        // Check the updated meps for meps with missing screen_name
+        let snFound = false;
+        updatedMeps.forEach(mep => {
+            if (typeof mep.screen_name !== 'string') {
+                const twitterDetails = memberScreenNames.find(member => {
+                    return mep.name === member.name;
+                });
+                if (twitterDetails) {
+                    mep.screen_name = twitterDetails.screen_name;
+                    snFound = true;
+                }
+            }
+        });
+
+        // check for the screen names that can't be connected to meps
+        memberScreenNames.forEach(member => {
+            const mepDetails = updatedMeps.find(mep => {
+                return member.name === mep.name || member.screen_name === mep.screen_name;
+            });
+            if (typeof mepDetails === 'undefined') {
+                console.log('Details not found for: ' + member.screen_name + ' - ' + member.name);
+            }
+        });
 
         // upload updated json to Storage
         if (updatedMeps.length >= 200) {
-            if (newMeps.length > 0) {
+            if (newMeps.length > 0 || snFound) {
                 // write to json file
                 fs.writeFile('meps.json', JSON.stringify(updatedMeps, null, 2), (err) => {
                     if (err) throw err;
