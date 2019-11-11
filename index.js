@@ -1,6 +1,6 @@
 const { Storage } = require('@google-cloud/storage');
 const storage = new Storage();
-const bucket = storage.bucket('mep-details');
+const bucket = storage.bucket('mep-eu');
 const Twitter = require('twitter');
 require('dotenv').config();
 
