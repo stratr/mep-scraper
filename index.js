@@ -10,9 +10,8 @@ const fsPromises = require("fs").promises;
 const cheerio = require('cheerio')
 const axios = require("axios");
 
-const siteUrl = "https://www.eduskunta.fi/FI/kansanedustajat/Sivut/Kansanedustajat-aakkosjarjestyksessa.aspx";
-
 const keListId = 203337069; // id of the list that has all the screen names of the meps
+// TODO: replace this with another self maintained list?
 
 const client = new Twitter({
     consumer_key: process.env.CONSUMER_KEY,
@@ -21,14 +20,17 @@ const client = new Twitter({
     access_token_secret: process.env.ACCESS_TOKEN_SECRET
 });
 
-const fetchData = async () => {
+const fetchData = async (siteUrl) => {
     const result = await axios.get(siteUrl);
     return cheerio.load(result.data);
 };
 
-const getMeps = async () => {
-    const $ = await fetchData();
-    const linkItems = $('#maincontent #WebPartWPQ2 div.link-item');
+const getMeps = async (data) => {
+    const siteUrl = "https://www.eduskunta.fi/FI/kansanedustajat/Sivut/Kansanedustajat-aakkosjarjestyksessa.aspx";
+
+    const $ = await fetchData(siteUrl);
+    const linkItems = $('#maincontent #WebPartWPQ2 div.link-item'); // the elements that contain mep details
+
     if (linkItems && linkItems.length > 190) {
 
         // scrape mep information from the site
@@ -38,8 +40,6 @@ const getMeps = async () => {
             const party = $(elem).find('div.description').text();
             mepsFetched[i] = { name: name, party: party, screen_name: null };
         });
-        //const updatedMeps = mepsFetched;
-        //const newMeps = mepsFetched;
 
         // download the previously collected data from Storage
         const oldMepsFile = await downloadFile(bucket.file('meps.json')); // how to handle if he file doesn't exist?
@@ -144,4 +144,9 @@ const readNdJson = (str) => {
     return str.length > 0 ? str.split('\n').map(JSON.parse) : [];
 }
 
-getMeps();
+/*
+This is the function that is triggered by Pub/Sub
+*/
+exports.mepScraper = (data) => {
+    return getMeps();
+};

@@ -122,6 +122,7 @@
 {"name":"Ilmari Nurminen","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"IlmariNurminen"}
 {"name":"Maria Ohisalo","party":"Vihreä eduskuntaryhmä","screen_name":"MariaOhisalo"}
 {"name":"Johanna Ojala-Niemelä","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"NiemelaOjala"}
+{"name":"Johanna Ojala-Niemelä","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"ojalaniemela"}
 {"name":"Mikko Ollikainen","party":"Ruotsalainen eduskuntaryhmä","screen_name":"OllikainenM"}
 {"name":"Petteri Orpo","party":"Kansallisen kokoomuksen eduskuntaryhmä","screen_name":"PetteriOrpo"}
 {"name":"Jouni Ovaska","party":"Keskustan eduskuntaryhmä","screen_name":"JouniOvaska"}
@@ -174,7 +175,7 @@
 {"name":"Ville Tavio","party":"Perussuomalaisten eduskuntaryhmä","screen_name":"VilleTavio"}
 {"name":"Kari Tolvanen","party":"Kansallisen kokoomuksen eduskuntaryhmä","screen_name":"KariTolvanen3"}
 {"name":"Ari Torniainen","party":"Keskustan eduskuntaryhmä","screen_name":null}
-{"name":"Erkki Tuomioja","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":null}
+{"name":"Erkki Tuomioja","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"TuomiojaErkki"}
 {"name":"Tytti Tuppurainen","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"TyttiTup"}
 {"name":"Ano Turtiainen","party":"Perussuomalaisten eduskuntaryhmä","screen_name":"TurtiainenAno"}
 {"name":"Sebastian Tynkkynen","party":"Perussuomalaisten eduskuntaryhmä","screen_name":"SebastianTyne"}
@@ -200,3 +201,5 @@
 {"name":"Anders Adlercreutz","party":"Ruotsalainen eduskuntaryhmä","screen_name":"adleande"}
 {"name":"Ari Torniainen","party":"Keskustan eduskuntaryhmä","screen_name":"TorniainenAri"}
 {"name":"Laura Huhtasaari","party":"Perussuomalaisten eduskuntaryhmä","screen_name":"LauraHuhtasaari"}
+{"name":"Tuomas Kettunen","party":"Keskustan eduskuntaryhmä","screen_name":"KettunenTuomas"}
+{"name":"Matias Mäkynen","party":"Sosialidemokraattinen eduskuntaryhmä","screen_name":"matiasmakynen"}
