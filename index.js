@@ -10,6 +10,9 @@ const fsPromises = require("fs").promises;
 const cheerio = require('cheerio')
 const axios = require("axios");
 
+// gcloud functions deploy mepScraper --env-vars-file .env.yaml --runtime nodejs10 --trigger-topic scrape_mep_details --timeout 180s
+// node -e 'require("./index").mepScraper()'
+
 const keListId = 203337069; // id of the list that has all the screen names of the meps
 // TODO: replace this with another self maintained list?
 
@@ -43,6 +46,15 @@ const getMeps = async (data) => {
 
         // download the previously collected data from Storage
         const oldMepsFile = await downloadFile(bucket.file('meps.json')); // how to handle if he file doesn't exist?
+
+
+        // TODO: use .toString() on the bucket files and skip reading and writing json files to file system. Cloud functions does not support writing filis in file system
+/*
+        const testJson = readNdJson(oldMepsFile.toString());
+        console.log(testJson);
+        asfdfsd
+        */
+
         fs.writeFile('meps_old.json', oldMepsFile, (err) => {
             if (err) throw err;
             console.log('meps_old.json file created');
