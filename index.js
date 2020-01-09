@@ -46,23 +46,9 @@ const getMeps = async (data) => {
 
         // download the previously collected data from Storage
         const oldMepsFile = await downloadFile(bucket.file('meps.json')); // how to handle if he file doesn't exist?
-
-
-        // TODO: use .toString() on the bucket files and skip reading and writing json files to file system. Cloud functions does not support writing filis in file system
-/*
-        const testJson = readNdJson(oldMepsFile.toString());
-        console.log(testJson);
-        asfdfsd
-        */
-
-        fs.writeFile('meps_old.json', oldMepsFile, (err) => {
-            if (err) throw err;
-            console.log('meps_old.json file created');
-        });
-
-        // read into json
-        const mepsOld = await fsPromises.readFile('meps_old.json', 'utf8');
-        const mepsOldJson = readNdJson(mepsOld);
+        // read into ndjson
+        const mepsOldJson = readNdJson(oldMepsFile.toString());
+        //console.log(mepsOldJson);
 
         // compare the scraped data to the data already in storage
         const newMeps = mepsFetched.filter(mep => {
@@ -108,6 +94,8 @@ const getMeps = async (data) => {
         if (updatedMeps.length >= 200) {
             if (newMeps.length > 0 || snFound) {
                 // write to json file
+                // TODO: skip this write file step and upload directly to Storage
+                // https://stackoverflow.com/questions/42879012/how-do-i-upload-a-base64-encoded-image-string-directly-to-a-google-cloud-stora
                 fs.writeFile('meps.json', writeNdJson(updatedMeps), (err) => {
                     if (err) throw err;
                     console.log('meps.json file created');
