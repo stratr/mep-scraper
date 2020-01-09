@@ -96,6 +96,12 @@ const getMeps = async (data) => {
                 // write to json file
                 // TODO: skip this write file step and upload directly to Storage
                 // https://stackoverflow.com/questions/42879012/how-do-i-upload-a-base64-encoded-image-string-directly-to-a-google-cloud-stora
+
+                const updatedFile = bucket.file('meps.json');
+                const contents = writeNdJson(updatedMeps);
+                updatedFile.save(contents).then(() => console.log('done'));
+
+/*
                 fs.writeFile('meps.json', writeNdJson(updatedMeps), (err) => {
                     if (err) throw err;
                     console.log('meps.json file created');
@@ -106,6 +112,7 @@ const getMeps = async (data) => {
                     console.log('data uploaded to storage');
                     //console.log(file);
                 });
+                */
             } else {
                 console.log('No new meps found. Aborting upload.');
             }
