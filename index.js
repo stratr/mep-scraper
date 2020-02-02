@@ -48,12 +48,10 @@ const getMeps = async (data) => {
         const oldMepsFile = await downloadFile(bucket.file('meps.json')); // how to handle if he file doesn't exist?
         // read into ndjson
         const mepsOldJson = readNdJson(oldMepsFile.toString());
-        //console.log(mepsOldJson);
 
         // compare the scraped data to the data already in storage
         const newMeps = mepsFetched.filter(mep => {
             return !includesMep(mep, mepsOldJson);
-            //return mepsOld.includes(mep);
         });
 
         console.log(newMeps.length + ' new meps found.');
@@ -93,26 +91,10 @@ const getMeps = async (data) => {
         // upload updated json to Storage
         if (updatedMeps.length >= 200) {
             if (newMeps.length > 0 || snFound) {
-                // write to json file
-                // TODO: skip this write file step and upload directly to Storage
-                // https://stackoverflow.com/questions/42879012/how-do-i-upload-a-base64-encoded-image-string-directly-to-a-google-cloud-stora
-
                 const updatedFile = bucket.file('meps.json');
                 const contents = writeNdJson(updatedMeps);
                 updatedFile.save(contents).then(() => console.log('done'));
 
-/*
-                fs.writeFile('meps.json', writeNdJson(updatedMeps), (err) => {
-                    if (err) throw err;
-                    console.log('meps.json file created');
-                });
-
-                // upload to storage
-                bucket.upload('meps.json').then(function() {
-                    console.log('data uploaded to storage');
-                    //console.log(file);
-                });
-                */
             } else {
                 console.log('No new meps found. Aborting upload.');
             }
@@ -120,6 +102,8 @@ const getMeps = async (data) => {
         } else {
             console.log('Something wrong with the meps json. Aborting upload.');
         }
+    } else {
+        console.log('Mep details not found from website.');
     }
 }
 
